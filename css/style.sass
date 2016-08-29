@@ -1,0 +1,541 @@
+$white_c: #ffffff
+$orange_c: #ff6600
+$blue_c: #33cccc
+$green_c: #99cc33
+$black_c: #333333
+
+body
+	margin: 0 !important
+	padding: 0 !important
+	background-color: $white_c !important
+	font-size: 100% !important
+	color: $black_c !important
+
+nav
+	height: 15vh
+	svg
+		width: 200px
+		height: 80px
+		margin-left: 15rem
+		fill: $white_c
+	.navbar-nav
+		margin: 4rem 0 0 20rem	
+	.navbar-nav > li > a
+		color: white
+		font-size: 1.8rem
+	.navbar-nav > li > a:hover
+		background-color: transparent
+		color: $orange_c
+		font-weight: 300
+	.glyphicon
+		font-size: 3rem
+		top: -0.5rem
+section#corusel
+	display: block
+	position: relative
+	width: 100%
+	height: 100vh
+	h1
+		position: relative
+		top: -10rem
+		left: -15rem
+		font-size: 7rem
+		text-align: left
+		padding: 0 32% 0 0
+		font-weight: 600
+	p
+		position: relative
+		top: -10rem
+		left: -15rem	
+		font-size: 2.5rem
+		text-align: left
+		padding: 0 40% 0 0
+	button.downscroll
+		position: absolute
+		width: 10rem
+		height: 10rem
+		top: 85%
+		left: 50%
+		margin-left: -2.5rem
+		background: url(../img/iconscroll.svg) 60% 20% no-repeat
+		background-size: 30px
+		border: none
+
+		.downscroll2
+			position: relative
+			width: 10rem
+			height: 7rem
+			background: url(../img/iconscroll.svg) 50% 0 no-repeat
+			background-size: 60px
+			
+			
+
+	a
+		color: $white_c
+		font-size: 1.7rem
+		display: inline-block
+		position: relative
+		left: -52rem
+		top: -5rem
+		border: 1px solid $white_c
+		padding: 1% 7% 1% 7%
+		text-decoration: none
+		-webkit-transition: color background-color linear 0.5s
+		-moz-transition: color background-color linear 0.5s
+		-o-transition: color background-color linear 0.5s
+		transition: color background-color linear 0.5s
+	a:hover
+		color: #000
+		background-color: $white_c
+		font-weight: 300
+	#carousel-example-generic
+		height: 100vh
+		img
+			height: 100vh
+			width: 100%
+	.carousel-indicators
+		left: 20rem
+		li
+			width: 15px
+			height: 15px
+			background-color: #888888
+			-webkit-transition: background-color ease-out 0.5s
+			-moz-transition: background-color  ease-out 0.5s
+			-o-transition: background-color ease-out 0.5s
+			transition: background-color ease-out 0.5s
+			border: none
+		li:hover
+			background-color: $white_c
+			width: 15px
+			height: 15px
+		li.active
+			background-color: white
+			width: 18px
+			height: 18px
+section#whatwedo
+	display: block
+	position: relative
+	width: 100%
+	height: 100vh
+	background-color: $white_c
+	padding: 5% 10% 0 10%
+	.row
+		margin-left: 0.000001em
+		margin-right: 0.000001em
+	h2
+		text-align: center
+		font-size: 3rem
+		padding: 0 25% 0 25%
+	h2:after
+		content: ' '
+		display: block
+		width: 200px
+		height: 40px
+		background: url(../img/arrowcenter.png) no-repeat
+		background-size: cover
+		margin: 0 auto
+	h3
+		text-align: center
+		font-size: 1.7rem
+		padding: 0 25% 0 25%
+		margin-top: 3%
+		margin-bottom: 3%
+		color: #66798c
+		font-family: 'Merriweather', serif
+		font-weight: 400
+		text-rendering: optimizeLegibility
+		line-height: 5rem
+	.wraperrng-box
+		
+		width: 33.3333%
+		height: 55vh
+		cursor: pointer
+		h3
+			font-family: unset
+			text-transform: uppercase
+			color: #66798c
+			font-size: 3rem
+
+
+		p
+			font-size: 1.5rem
+			text-align: center
+			color: #66798c
+			line-height: 2.5rem
+			padding: 5% 0 5% 0
+	.orange-box
+		display: block
+		position: relative
+		width: 150px
+		height: 170px
+		margin: 0 auto
+		margin-top: 10%
+		text-align: center
+		svg
+			width: 100px
+			height: 150px
+			path
+				fill: $orange_c
+				stroke: $orange_c
+			
+	.blue-box
+		display: block
+		position: relative
+		width: 150px
+		height: 170px
+		margin: 0 auto
+		margin-top: 10%
+		text-align: center
+		svg
+			width: 120px
+			height: 150px
+			path
+				stroke: $blue_c
+				fill: $blue_c
+	.green-box
+		display: block
+		position: relative
+		width: 150px
+		height: 170px
+		margin: 0 auto
+		margin-top: 10%
+		text-align: center
+		svg
+			width: 120px
+			height: 150px
+			path
+				stroke: $green_c
+				fill: $green_c
+		
+	.wraperrng-box:hover
+		h3, p
+			color: $white_c
+section#customer
+	display: block
+	position: relative
+	padding: 0 10% 0 10%
+	text-align: center
+	a
+		font-size: 1.8rem
+		border: 1px solid $orange_c
+		color: $orange_c
+		background-color: $white_c
+		padding: 1% 5% 1% 5%
+		text-decoration: none
+		-webkit-transition: background-color color 1s linear
+		-moz-transition: background-color color 5s linear
+		-o-transition: background-color color 5s linear
+		transition: background-color color 5s linear
+	a:hover
+		color: $white_c
+		background-color: $orange_c
+	.row
+		margin-left: 0.000001em
+		margin-right: 0.000001em
+
+
+	h2
+		text-align: center
+		font-size: 3rem
+		margin: 10% 0 5% 0
+	h2:after
+		content: ' '
+		display: block
+		width: 200px
+		height: 40px
+		background: url(../img/arrowcenter.png) no-repeat
+		background-size: cover
+		margin: 0 auto
+			
+	.col-md-4
+		text-align: center
+		img
+			margin: 10% 0 10% 0
+			width: 250px
+			height: auto
+	p
+		margin: 5% 0 5% 0
+section#galery
+	display: block
+	position: relative
+	background-color: $white_c
+	.row
+		margin-left: 0.000001em
+		margin-right: 0.000001em
+		
+		.col-md-6:first-child, .col-md-3:last-child
+			padding: 0
+		
+		.text-block
+			display: block
+			width: 100%
+			height: 100%
+			position: absolute
+			background-color: transparent
+			z-index: 99
+			top: 0
+			text-align: center
+			-webkit-transition: background-color 0.5s linear
+			-moz-transition: background-color 0.5s linear
+			-o-transition: background-color 0.5s linear
+			transition: background-color 0.5s linear
+			cursor: pointer
+					
+			
+			h3
+
+				text-transform: uppercase
+				font-size: 3rem
+				color: $white_c
+				display: block
+				margin-top: 20%
+				opacity: 0
+				-webkit-transition: all 0.5s linear
+				-moz-transition: all 0.5s linear
+				-o-transition: all 0.5s linear
+				transition: all 0.5s linear
+
+			p
+				font-size: 1.5rem	
+				color: $white_c
+				margin-top: 30%
+				opacity: 0
+				-webkit-transition: all 0.5s linear
+				-moz-transition: all 0.5s linear
+				-o-transition: all 0.5s linear
+				transition: all 0.5s linear
+		.text-block:hover
+			background-color: rgba(256, 102, 0, 0.8)
+			h3
+				margin-top: 35%
+				opacity: 100
+			p
+				margin-top: 0
+				opacity: 100
+		.econom
+			display: block
+			width: 100%
+			height: 80vh			
+			background: url(../img/econom.jpg)
+			background-size: cover
+			padding-top: 40%
+		.insta
+			display: block
+			width: 100%
+			height: 40vh			
+			background: url(../img/insta.jpg)
+			background-size: cover
+			padding-top: 40%
+		.stellar
+			display: block
+			width: 100%
+			height: 40vh			
+			background: url(../img/stellar.jpg)
+			background-size: cover
+			padding-top: 40%
+		.bmc
+			display: block
+			width: 100%
+			height: 40vh			
+			background: url(../img/bmc.jpg)
+			background-size: cover
+			padding-top: 40%	
+		.custom
+			display: block
+			width: 100%
+			height: 40vh			
+			background: url(../img/cust.jpg)
+			background-size: cover
+			padding-top: 40%	
+		.qualc
+			display: block
+			width: 100%
+			height: 40vh			
+			background: url(../img/qualc.jpg)
+			background-size: cover
+			padding-top: 40%	
+		.foteen
+			display: block
+			width: 100%
+			height: 40vh			
+			background: url(../img/stellar.jpg)
+			background-size: cover
+			padding-top: 40%	
+	.throw
+		margin-top: 0.8%
+		.col-md-3:first-child
+			padding: 0		
+		.col-md-3:nth-child(2)
+			padding-right: 0
+section#news
+	display: block
+	position: relative
+	top: 1.5em
+	background-color: #eeeeee
+	padding: 10% 10% 10% 10%
+	text-align: center
+
+	h2
+		margin-bottom: 10%
+	.row
+		margin-left: 0.000001em
+		margin-right: 0.000001em
+	.row:last-child
+		margin-top: 1.5em
+	
+	.blogs
+		display: block
+		width: 100%
+		height: 35vh
+		background-color: $white_c
+		padding: 5% 3% 15% 3%
+		text-align: left
+		overflow: hidden
+		cursor: pointer
+
+
+		h4
+			text-transform: uppercase
+			color: #dfc01b
+			font-weight: 700
+			font-size: 1.6rem
+		p
+			font-size: 1.5rem
+
+		p:after
+			content: ' [...]'
+	.blogs:hover
+		background-color: $black_c
+		color: $white_c		
+	.event
+		display: block
+		width: 100%
+		height: 45vh
+		background-color: $white_c
+		padding: 5% 3% 15% 3%
+		text-align: left
+		overflow: hidden
+		cursor: pointer
+
+		h4
+			text-transform: uppercase
+			color: $blue_c
+			font-weight: 700
+			font-size: 1.6rem
+		p
+			font-size: 1.5rem
+
+		p:after
+			content: ' [...]'		
+	.event:hover
+		background-color: $black_c
+		color: $white_c				
+
+section#joinus
+	display: block
+	position: relative
+	width: 100%
+	height: 45vh
+	background: url(../img/bgjoinus.jpg)
+	color: $white_c
+	text-align: center
+	padding-top: 5%
+	h2
+		margin-bottom: 3%
+	p
+		font-size: 2rem
+		margin-bottom: 3%
+	a
+		border: 1px solid $white_c
+		color: $white_c
+		padding: 1% 5% 1% 5%
+		font-size: 1.7rem
+		text-decoration: none
+		font-weight: 600
+	a:hover
+		background-color: $white_c
+		color: $orange_c	
+section#sots
+	display: block
+	position: relative
+	padding: 0 8% 0 8%
+	background-color: #333333
+	.row
+		margin-left: 0.000001em
+		margin-right: 0.000001em
+	img
+		width: 200px
+		height: 80px
+	a
+		display: inline-block
+		width: 35px
+		height: 35px
+		border-radius: 90%
+		border: 1px solid $white_c
+		margin: 4% 0 0 5%
+		
+		
+	a.in
+		background: transparent url(../img/icons.svg) no-repeat
+		background-position:  0.000001rem -0.2rem
+		background-size: 13rem
+		-webkit-transition: all 0.2s linear
+		-moz-transition: all 0.2s linear
+		-o-transition: all 0.2s linear
+		transition: all 0.2s linear
+	a.in:hover
+		background-position: 0.000001rem -3rem
+		background-color: $blue_c
+		border: none
+	a.tw
+		background: transparent url(../img/icons.svg) no-repeat
+		background-position:  -3.2rem -0.2rem
+		background-size: 13rem
+		-webkit-transition: all 0.2s linear
+		-moz-transition: all 0.2s linear
+		-o-transition: all 0.2s linear
+		transition: all 0.2s linear
+	a.tw:hover
+		background-position: -3.2rem -3rem
+		background-color: $blue_c
+		border: none
+	a.face
+		background: transparent url(../img/icons.svg) no-repeat
+		background-position:  -6.5rem -0.2rem
+		background-size: 13rem
+		-webkit-transition: all 0.2s linear
+		-moz-transition: all 0.2s linear
+		-o-transition: all 0.2s linear
+		transition: all 0.2s linear
+	a.face:hover
+		background-position: -6.5rem -3rem
+		background-color: $blue_c
+		border: none
+	a.mail
+		background: transparent url(../img/icons.svg) no-repeat
+		background-position:  -9.7rem -0.2rem
+		background-size: 13rem
+		-webkit-transition: all 0.2s linear
+		-moz-transition: all 0.2s linear
+		-o-transition: all 0.2s linear
+		transition: all 0.2s linear
+	a.mail:hover
+		background-position: -9.7rem -3rem
+section#copyrite
+	position: relative
+	display: block
+	height: 7vh
+	width: 100%
+	padding: 1% 10% 0 10%
+	text-align: left
+	background-color: #2b2b2b
+	p
+		color: #999
+		font-size: 1.3rem
+	a
+		color: #999
+		text-decoration: none
+		margin-left: 2%
+	a:hover
+		color: $orange_c	
+		
